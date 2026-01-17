@@ -1,3 +1,5 @@
+from quopri import ESCAPE
+
 import yt_dlp
 import os
 import uuid
@@ -19,5 +21,12 @@ def download_link(url, download_folder='meow/'):
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([url])
 
-download_link('https://www.instagram.com/reel/DTjXyCwkkbR/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==')
+while True:
+    user= str(input("enter the Url of the file you want to downloade: "))
+    if user == 'e':
+        break
+    else:
+        pass
+    download_link(user)
+
 
