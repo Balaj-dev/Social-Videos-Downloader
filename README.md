@@ -11,6 +11,9 @@ git clone https://github.com/Balaj-dev/Social-Videos-Downloader.git
 
 cd Social-Videos-Downloader
 
+```
+<b>*Note*  You can use pip3 and pip according to your system</b>
+```Comand line 
 pip install -r requirements.txt
 
 python main.py
