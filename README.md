@@ -1,21 +1,33 @@
 # Social-Videos-Downloader
-A cli tool that lets you download any Youtube , Instagram , Facebook reel or video stright through your Terminal locally without useing any third party to download from web (see endless ads)
 
-# Install process
-1) Open your Terminal and write:
- 
-<code>
+A CLI (Command-Line Interface) tool that lets you **download any YouTube, Instagram, or Facebook video/reel** straight through your terminal **locally**, without using any third-party websites (say goodbye to endless ads!).  
+
+> Works on **Linux, macOS, and Windows** only.
+
+Clone the repository:
+
+```bash
 git clone https://github.com/Balaj-dev/Social-Videos-Downloader.git
-</code>
 
- 
-2) Go into that cloned folder:
-    
-<code> cd Social-Videos-Downloader</code>
+cd Social-Videos-Downloader
 
-3) Download the required package:
+pip install -r requirements.txt
 
-<code> pip install -r requirments.txt </code>
+python main.py
 
-4) Run the program:
-  <pan>  <code> python main.py </code></pan>
+```
+
+# File Structuer 
+
+```commandline
+Social-Videos-Downloader/
+│
+├── main.py                   # Main script; entry point of your downloader
+├── requirements.txt          # Python dependencies (yt-dlp)
+├── README.md                 # Project description and instructions
+│
+├── Downloads/                # Folder where videos are saved locally
+│   └── (downloaded files)
+└──
+
+```
