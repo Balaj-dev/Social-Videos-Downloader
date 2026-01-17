@@ -1,10 +1,10 @@
-from quopri import ESCAPE
 
 import yt_dlp
 import os
 import uuid
 
-def download_link(url, download_folder='meow/'):
+
+def download_link(url, download_folder='Downloadeed_from_py/'):
     if not os.path.exists(download_folder):
         os.makedirs(download_folder)
 
@@ -21,12 +21,8 @@ def download_link(url, download_folder='meow/'):
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([url])
 
-while True:
-    user= str(input("enter the Url of the file you want to downloade: "))
-    if user == 'e':
-        break
-    else:
-        pass
-    download_link(user)
 
+
+user= str(input("enter the Url of the file you want to downloade: "))
+download_link(user)
 
